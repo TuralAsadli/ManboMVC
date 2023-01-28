@@ -1,0 +1,28 @@
+﻿@using MambaMVC1.Areas.ViewModel.Position;
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model CreatePositionVM
+
+<div class="col-md-6 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Default form</h4>
+            <p class="card-description">
+                Basic form layout
+            </p>
+            <form class="forms-sample">
+                <div class="form-group">
+                    <label asp-for="PositionName">Username</label>
+                    <input asp-for="PositionName" type="text" class="form-control" id="exampleInputUsername1" placeholder="position">
+                    <span asp-validation-for="PositionName"></span>
+                </div>
+                
+                <button type="submit" class="btn btn-primary me-2">Submit</button>
+                <button class="btn btn-light">Cancel</button>
+            </form>
+        </div>
+    </div>
+</div>

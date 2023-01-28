@@ -1,0 +1,70 @@
+﻿@using MambaMVC1.Areas.ViewModel.Employee;
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model EmployeeUpdateVM
+
+<div class="col-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <h4 class="card-title">Basic form elements</h4>
+            <p class="card-description">
+                Basic form elements
+            </p>
+            <form class="forms-sample" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label asp-for="FirstName">First Name</label>
+                    <input asp-for="FirstName" type="text" class="form-control" id="exampleInputName1" placeholder="FirstName">
+                    <span asp-validation-for="FirstName"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="LastName">last Name</label>
+                    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
+                    <span asp-validation-for="LastName"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="FaceBook">FaceBook</label>
+                    <input asp-for="FaceBook" class="form-control" id="exampleInputPassword4" placeholder="FaceBook">
+                    <span asp-validation-for="FaceBook"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Instagram">Instagram</label>
+                    <input asp-for="Instagram" class="form-control" id="exampleInputPassword4" placeholder="Instagram">
+                    <span asp-validation-for="Instagram"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Twitter">Twitter</label>
+                    <input asp-for="Twitter" class="form-control" id="exampleInputPassword4" placeholder="Twitter">
+                    <span asp-validation-for="Instagram"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="LinkedIn">LinkedIn</label>
+                    <input asp-for="LinkedIn" class="form-control" id="exampleInputPassword4" placeholder="LinkedIn">
+                    <span asp-validation-for="LinkedIn"></span>
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="Img">Iamge</label>
+                    <input asp-for="Img" accept="image/*" type="file" id="myFile">
+                    <span asp-validation-for="Img"></span>
+
+                </div>
+
+                <div class="form-group">
+                    <label asp-for="PositionId">Positions</label>
+                    <select asp-for="PositionId" asp-items="ViewBag.Positions"></select>
+
+                </div>
+
+                <button type="submit" class="btn btn-primary me-2">Submit</button>
+                <button class="btn btn-light">Cancel</button>
+            </form>
+        </div>
+    </div>
+</div>@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
